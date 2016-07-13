@@ -1,6 +1,9 @@
 # exclude Eclipse projectfile
 .project
 
+# exclude GFM viewer temp files:
+*.md.html
+
 ##########################################
 # standard Python .gitignore from github
 ##########################################
