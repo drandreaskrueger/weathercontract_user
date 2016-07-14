@@ -55,13 +55,12 @@ The result is a new folder `/your/path/to/weathercontract_user/` somewhere on yo
 ### 3 the correct folder
 You need to be INSIDE that new folder, for working with my scripts, e.g. for the *gsoil console*. 
 Open a terminal / cmd.exe inside that folder; or open a terminal / cmd.exe and then do `cd /your/path/to/weathercontract_user`. 
-On windows: 
+Example for windows: 
 
     cmd.exe
     
     C:
     cd C:\Downloads\weathercontract_user\
-
     gsoil attach
 
 
@@ -91,7 +90,7 @@ You could automate this (as a .BAT or .sh file) for starting gsoil (in the first
 ### 5 interact via the JS console
 
 In the `gsoil attach` console, you can access node functions, and use Javascript. 
-Several Ethereum related packages preloaded. To explore them, type the name, and hit enter; 
+Several Ethereum related packages are preloaded. To explore them, type the name, and hit enter; 
 or type the name, and hit the TAB key:
 
     web3.      + TAB
@@ -116,7 +115,8 @@ Most commands are explained in the wiki: [JSRE](https://github.com/ethereum/go-e
 
 ### 6 Languages: Solidity (LLL, Serpent,...) - and JavaScript or Python 
 I have written the smart contract in `Solidity`([docs](http://solidity.readthedocs.io/en/latest/), 
-[github](https://gitter.im/ethereum/solidity), [gitter](https://gitter.im/ethereum/solidity)), 
+[github](https://github.com/ethereum/solidity), [gitter](https://gitter.im/ethereum/solidity), 
+[repl](https://github.com/raineorshine/solidity-repl)), 
 which then gets compiled to EVM code (Ethereum Virtual Machine), 
 and deployed into the blockchain. Other languages for writing smart contracts are LLL or Serpent; Solidity 
 seems to be the most used now.  
@@ -164,8 +164,8 @@ Better update pip (current is v8.1.2). Open a terminal/cmd.exe, and type:
     pip install --upgrade pip
     pip --version
 
-With `pip` it is easy to install any of the 80k Python packages from [pypi](https://pypi.python.org). 
-Pip will get all the packages it depends on, and then install ethjsonrpc: 
+`pip` makes it easy to install any of 80k Python packages from [PyPI](https://pypi.python.org). 
+Pip gets all dependencies, and then install ethjsonrpc: 
 
 	pip install ethjsonrpc      # or
 	sudo pip install ethjsonrpc
@@ -176,6 +176,7 @@ Now try it out. Start your `gsoil --rpc` in one terminal, then `python` in a sec
 and behind the >>> prompt start coding python::
     
     import ethjsonrpc, pprint, time, web3
+    
     c = ethjsonrpc.EthJsonRpc(port=39421)
     pprint.pprint (dir(c))
     
