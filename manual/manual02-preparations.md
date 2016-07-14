@@ -1,4 +1,4 @@
-version 0.5.2 (July 14th 2016) - contract ABI is not yet published - you can read texts, and prepare your system.
+version 0.5.3 (July 14th 2016) - contract ABI is not yet published - you can read texts, and prepare your system.
 # Manual 2: Preparations
 
 ### 0 operating system
@@ -160,7 +160,7 @@ To access the commands in Python, I am using the package [ethjsonrpc](https://gi
 installed via `pip` (pip is usually [included in python](https://pip.pypa.io/en/stable/installing/)). 
 Better update pip (current is v8.1.2). Open a terminal/cmd.exe, and type:
 
-	pip --version
+    pip --version
     pip install --upgrade pip
     pip --version
 
@@ -172,8 +172,12 @@ Pip gets all dependencies, and then install ethjsonrpc:
   
 It should end with something like `Successfully installed ... Cleaning up...`.
 
-Now try it out. Start your `gsoil --rpc` in one terminal, then `python` in a second terminal, 
-and behind the >>> prompt start coding python::
+Now try it out: 
+
+#### using EthJsonRpc to talk to the node
+
+Start your `gsoil --rpc` in one terminal, then `python` in a second terminal, 
+and behind the python >>> prompt start coding:
     
     import ethjsonrpc, pprint, time, web3
     
