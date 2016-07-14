@@ -5,9 +5,11 @@ version 0.5.3 (July 14th 2016) - contract ABI is not yet published - you can rea
 
 It works on Linux, Mac and Windows - but some things are easier on Linux. 
 So perhaps take your first steps into the free world of open source operating systems? 
-Keep your Windows home machine - just get a cheap [VPS](https://en.wikipedia.org/wiki/Virtual_private_server).
-For 5$ per month, you rent your small virtual machine at digitalocean, and it is online 24/7, 
-and with a fast connection - your own webserver! And when you destroy that "droplet" again, it stops costing money. 
+Keep your Windows machine as it is, and install Linux in a [VirtualBox](https://www.virtualbox.org/). 
+Or just get a cheap [VPS](https://en.wikipedia.org/wiki/Virtual_private_server).
+For 5$ per month, rent your small virtual machine at digitalocean, and it is online 24/7 on a fast connection - 
+host your own webserver, permanent nodes for your favorite crypto, etc. 
+And when you destroy that "droplet" again, it stops costing money. 
 Use my [referal link](https://m.do.co/c/f934b16d6302) - then you and I will both get rewarded. 
 
 #### Linux
