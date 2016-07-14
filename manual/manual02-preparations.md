@@ -191,12 +191,16 @@ after the last command you need to press enter once more, to start that loop. Co
 
 Try out more?  python >>>
 
+Infos about the last block:
+
 	block = c.eth_getBlockByNumber(c.eth_blockNumber())
 	pprint.pprint(block)
 	
 	block['difficulty']
 	dir(web3.utils.encoding)
 	web3.utils.encoding.toDecimal(block['difficulty'])
+
+Your account balances:
 
 	c.eth_accounts()
 	acc0 = c.eth_accounts()[0]
