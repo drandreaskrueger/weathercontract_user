@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 version 0.5.4 (July 15th 2016) - contract ABI is not yet published - you can read texts, and prepare your system.
-=======
-version 0.5.3 (July 14th 2016) - contract ABI is not yet published - you can read texts, and prepare your system.
->>>>>>> refs/remotes/origin/master
 # Manual 2: Preparations
 
 ### 0 operating system
@@ -142,7 +138,7 @@ enjoy your summer. Or:
 
 My Python library helps to build apps that interact with smart contracts. 
 
-Most Linux distributions come with Python 2.7 anyways (check `python --version`, if not:
+Most Linux distributions come with Python 2.7 anyways (check `python --version`), if not:
 
     apt-get install python
 
@@ -168,7 +164,7 @@ To access the commands in Python, I am using the package [ethjsonrpc](https://gi
 installed via `pip` (pip is usually [included in python](https://pip.pypa.io/en/stable/installing/)). 
 Better update pip (current is v8.1.2). Open a terminal/cmd.exe, and type:
 
-    pip --version
+	pip --version
     pip install --upgrade pip
     pip --version
 

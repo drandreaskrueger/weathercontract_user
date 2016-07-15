@@ -17,6 +17,7 @@ echo _ Starting gsoil with open RPC port %PORT%
 echo _
 echo _ I have configured my firewall so that only localhost can access port %PORT%.
 echo _ I do not keep much money in my first address eth.coinbase - just to be sure.
+echo _ See security summary at http://ethereum.stackexchange.com/a/3888/2937
 echo _
 echo _
 

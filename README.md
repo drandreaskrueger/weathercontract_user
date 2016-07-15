@@ -1,4 +1,4 @@
-version 0.5.2 (July 14th 2016) - contract ABI is not yet published, but you can read texts, and prepare your system.
+version 0.5.4 (July 15th 2016) - contract ABI is not yet published, but you can read texts, and prepare your system.
 # weathercontract_user
 Novel smart contract:
 * ForecastWeatherAtLocation
@@ -17,6 +17,7 @@ download & sync your [SOIL wallet](https://bitcointalk.org/index.php?topic=11767
 4 Send me some, and support this project.
 
 ### Become an Angel now:
+Thanks a lot already to: `croxx`, and `yns1971`!
 
 Please send to 
 
