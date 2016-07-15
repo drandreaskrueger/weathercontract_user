@@ -1,13 +1,19 @@
+<<<<<<< HEAD
 version 0.5.4 (July 15th 2016) - contract ABI is not yet published - you can read texts, and prepare your system.
+=======
+version 0.5.3 (July 14th 2016) - contract ABI is not yet published - you can read texts, and prepare your system.
+>>>>>>> refs/remotes/origin/master
 # Manual 2: Preparations
 
 ### 0 operating system
 
 It works on Linux, Mac and Windows - but some things are easier on Linux. 
 So perhaps take your first steps into the free world of open source operating systems? 
-Keep your Windows home machine - just get a cheap [VPS](https://en.wikipedia.org/wiki/Virtual_private_server).
-For 5$ per month, you rent your small virtual machine at digitalocean, and it is online 24/7, 
-and with a fast connection - your own webserver! And when you destroy that "droplet" again, it stops costing money. 
+Keep your Windows machine as it is, and install Linux in a [VirtualBox](https://www.virtualbox.org/). 
+Or just get a cheap [VPS](https://en.wikipedia.org/wiki/Virtual_private_server).
+For 5$ per month, rent your small virtual machine at digitalocean, and it is online 24/7 on a fast connection - 
+host your own webserver, permanent nodes for your favorite crypto, etc. 
+And when you destroy that "droplet" again, it stops costing money. 
 Use my [referal link](https://m.do.co/c/f934b16d6302) - then you and I will both get rewarded. 
 
 #### Linux
@@ -162,7 +168,7 @@ To access the commands in Python, I am using the package [ethjsonrpc](https://gi
 installed via `pip` (pip is usually [included in python](https://pip.pypa.io/en/stable/installing/)). 
 Better update pip (current is v8.1.2). Open a terminal/cmd.exe, and type:
 
-	pip --version
+    pip --version
     pip install --upgrade pip
     pip --version
 
@@ -174,8 +180,12 @@ Pip gets all dependencies, and then install ethjsonrpc:
   
 It should end with something like `Successfully installed ... Cleaning up...`.
 
-Now try it out. Start your `gsoil --rpc` in one terminal, then `python` in a second terminal, 
-and behind the >>> prompt start coding python::
+Now try it out: 
+
+#### using EthJsonRpc to talk to the node
+
+Start your `gsoil --rpc` in one terminal, then `python` in a second terminal, 
+and behind the python >>> prompt start coding:
     
     import ethjsonrpc, pprint, time, web3
     
@@ -189,12 +199,16 @@ after the last command you need to press enter once more, to start that loop. Co
 
 Try out more?  python >>>
 
+Infos about the last block:
+
 	block = c.eth_getBlockByNumber(c.eth_blockNumber())
 	pprint.pprint(block)
 	
 	block['difficulty']
 	dir(web3.utils.encoding)
 	web3.utils.encoding.toDecimal(block['difficulty'])
+
+Your account balances:
 
 	c.eth_accounts()
 	acc0 = c.eth_accounts()[0]
