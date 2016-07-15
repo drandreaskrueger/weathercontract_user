@@ -1,4 +1,4 @@
-version 0.5.2 (July 14th 2016) - contract ABI is not yet published - you can read texts, and prepare your system.
+version 0.5.4 (July 15th 2016) - contract ABI is not yet published - you can read texts, and prepare your system.
 # Manual 2: Preparations
 
 ### 0 operating system
@@ -116,10 +116,11 @@ Most commands are explained in the wiki: [JSRE](https://github.com/ethereum/go-e
 ### 6 Languages: Solidity (LLL, Serpent,...) - and JavaScript or Python 
 I have written the smart contract in `Solidity`([docs](http://solidity.readthedocs.io/en/latest/), 
 [github](https://github.com/ethereum/solidity), [gitter](https://gitter.im/ethereum/solidity), 
-[repl](https://github.com/raineorshine/solidity-repl)), 
+[repl](https://github.com/raineorshine/solidity-repl), [solgraph](https://github.com/raineorshine/solgraph/)), 
 which then gets compiled to EVM code (Ethereum Virtual Machine), 
 and deployed into the blockchain. Other languages for writing smart contracts are LLL or Serpent; Solidity 
-seems to be the most used now.  
+seems to be the most used now.  This is an excellent time to start learning Solidity, as finally 
+[best practices](https://github.com/ConsenSys/smart-contract-best-practices) are found and described.
 
 For speaking to the node, two options are widespread: **JavaScript** (in the `gsoil attach` console), 
 or **Python** which I prefer. I am publishing simple example code to access the smart contract in both - 
@@ -135,7 +136,7 @@ enjoy your summer. Or:
 
 My Python library helps to build apps that interact with smart contracts. 
 
-Most Linux distributions come with Python 2.7 anyways, if not:
+Most Linux distributions come with Python 2.7 anyways (check `python --version`, if not:
 
     apt-get install python
 
@@ -152,7 +153,8 @@ To **access gsoil from Python EthJsonRpc you must start gsoil with open RPC port
     
 Additional to that "localhost", I have configured my *firewall* so that *only localhost can access port 39421*. 
 As an extra security measure, do not keep large amounts of money in your *first* address 
-(`eth.coinbase` == `eth.accounts[0]`). Just to be sure. You could create a new wallet address, and move most of your money there.
+(`eth.coinbase` == `eth.accounts[0]`). Just to be sure. You could create a new wallet address, and move most of your money there. 
+There is an excellent [security summary](http://ethereum.stackexchange.com/a/3888/2937). 
 
 #### Python, pip, EthJsonRpc
 
