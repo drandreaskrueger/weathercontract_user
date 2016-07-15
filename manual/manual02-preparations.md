@@ -1,27 +1,28 @@
-version 0.5.4 (July 15th 2016) - contract ABI is not yet published - you can read texts, and prepare your system.
+version 0.5.5 (July 15th 2016) - contract ABI is not yet published - you can read texts, and prepare your system.
 # Manual 2: Preparations
 
 ### 0 operating system
 
 It works on Linux, Mac and Windows - but some things are easier on Linux. 
-So perhaps take your first steps into the free world of open source operating systems? 
-Keep your Windows machine as it is, and install Linux in a [VirtualBox](https://www.virtualbox.org/). 
+Are you ready to take your first steps into the free world of open source operating systems? 
+Keep your Windows machine as it is, and install Linux inside a [VirtualBox](https://www.virtualbox.org/) 
+(excellent [slideshow](http://www.networkworld.com/article/2937148/linux/how-to-install-debian-linux-8-1-in-a-virtualbox-vm.html) how to). 
 Or just get a cheap [VPS](https://en.wikipedia.org/wiki/Virtual_private_server).
 For 5$ per month, rent your small virtual machine at digitalocean, and it is online 24/7 on a fast connection - 
-host your own webserver, permanent nodes for your favorite crypto, etc. 
+host your own webserver, permanent nodes for your favorite cryptos, etc. 
 And when you destroy that "droplet" again, it stops costing money. 
 Use my [referal link](https://m.do.co/c/f934b16d6302) - then you and I will both get rewarded. 
 
 #### Linux
 
-I assume your package list & system is updated:
+I assume your package list & system is updated & upgraded:
 
     apt-get update && apt-get -y upgrade      # or 
     sudo apt-get update && sudo apt-get -y upgrade
     
 Programs I have found to be useful:
  
-    apt-get -y install sudo git nano screen tree dos2unix wget curl screen zip python
+    apt-get -y install sudo git nano tree dos2unix wget curl screen zip python
     
 
 ### 1 install soil
@@ -88,6 +89,7 @@ You could automate this (as a .BAT or .sh file) for starting gsoil (in the first
 
     gsoil js /path/to/folder/useful/addpeers.js
 
+(see [#Scripts-make-it-easy](#Scripts-make-it-easy) below).
 
 ### 5 interact via the JS console
 
@@ -136,20 +138,19 @@ enjoy your summer. Or:
 
 ### 7 Python talks to RPC port
 
-My Python library helps to build apps that interact with smart contracts. 
-
-Most Linux distributions come with Python 2.7 anyways (check `python --version`), if not:
+My Python library helps to build apps that interact with smart contracts. Most Linux distributions come with Python 2.7 anyways (check `python --version`), if not:
 
     apt-get install python
 
-Windows, as usual, is more complicated. Download [Python 2.7](https://www.python.org/downloads/) (not 3.5), 
-or [Anaconda](https://www.continuum.io/downloads) with Python 2.7.
+Windows, as usual, is a bit more complicated. Download [Python 2.7](https://www.python.org/downloads/) (not 3.5), 
+or [Anaconda](https://www.continuum.io/downloads) with Python 2.7. Edit your .py files simply 
+with [Notepad++](https://notepad-plus-plus.org/), or get a full IDE like [Eclipse, with PyDev](http://www.pydev.org/). 
 
 The [wikipedia page Python](https://en.wikipedia.org/wiki/Python_%28programming_language%29) is good, 
 there is a [Python For Beginners](https://www.python.org/about/gettingstarted/) page, 
 and a funny [tutorial](https://docs.python.org/2/tutorial/) if you want to go deeper.
 
-To **access gsoil from Python EthJsonRpc you must start gsoil with open RPC port**, using the switch `--rpc` (see [.BAT](../useful/gsoilrpc.BAT) and [.sh](../useful/gsoilrpc.sh) file):
+To **access gsoil from Python EthJsonRpc you must start gsoil with open RPC port**, using the switch `--rpc`
 
     gsoil --rpc  --rpcaddr="localhost" js useful/addpeers.js
     
@@ -157,6 +158,12 @@ Additional to that "localhost", I have configured my *firewall* so that *only lo
 As an extra security measure, do not keep large amounts of money in your *first* address 
 (`eth.coinbase` == `eth.accounts[0]`). Just to be sure. You could create a new wallet address, and move most of your money there. 
 There is an excellent [security summary](http://ethereum.stackexchange.com/a/3888/2937). 
+
+#### Scripts make it easy
+
+There [gsoilrpc.BAT](../useful/gsoilrpc.BAT) (windows) and 
+[gsoilrpc.sh](../useful/gsoilrpc.sh) (Linux) (Mac?) scripts 
+start gsoil with open RPC port, and immediately add peers.
 
 #### Python, pip, EthJsonRpc
 
@@ -174,11 +181,9 @@ Pip gets all dependencies, and then install ethjsonrpc:
 	pip install ethjsonrpc      # or
 	sudo pip install ethjsonrpc
   
-It should end with something like `Successfully installed ... Cleaning up...`.
+It should end with something like `Successfully installed ... Cleaning up...`. Now try it out: 
 
-Now try it out: 
-
-#### using EthJsonRpc to talk to the node
+#### Using EthJsonRpc to talk to the node
 
 Start your `gsoil --rpc` in one terminal, then `python` in a second terminal, 
 and behind the python >>> prompt start coding:
