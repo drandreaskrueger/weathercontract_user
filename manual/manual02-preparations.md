@@ -89,7 +89,7 @@ You could automate this (as a .BAT or .sh file) for starting gsoil (in the first
 
     gsoil js /path/to/folder/useful/addpeers.js
 
-(see [#Scripts-make-it-easy](#Scripts-make-it-easy) below).
+(see [#scripts-make-it-easy](#scripts-make-it-easy) below).
 
 ### 5 interact via the JS console
 
