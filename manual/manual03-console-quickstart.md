@@ -3,7 +3,9 @@ version 0.5.8 (July 18th 2016) - contract ABI and tools are published!
 Preparations:
 
 * Introduction to this project [../text/text01-introduction.md](../text/text01-introduction.md)
-* Preparations [manual02-preparations.md](manual02-preparations.md) --> be in the [correct folder](manual02-preparations.md#3-the-correct-folder), then: 
+* Preparations [manual02-preparations.md](manual02-preparations.md) --> be in the [correct folder](manual02-preparations.md#3-the-correct-folder). 
+
+For this quickstart tutorial Python is not needed yet. All happens in your gsoil included JavaScript console. 
 
 
 # Manual 3: Console - Quickstart

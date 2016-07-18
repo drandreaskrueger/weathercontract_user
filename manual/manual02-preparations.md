@@ -25,9 +25,11 @@ Programs I have found to be useful:
     apt-get -y install sudo git nano tree dos2unix wget curl screen zip python
     
 
-### 1 install soil
+### 1 install and start soil
 See [soil thread](https://bitcointalk.org/index.php?topic=1176709.msg12385424#msg12385424) 
-how to install SOIL on your machine. How to *add peers*, see below.
+how to install SOIL on your machine. (for Linux see: [../useful/soil-linux-install.sh](../useful/soil-linux-install.sh)) 
+
+How to *add peers*, see below.
 
 Have a few dozen SOIL coins in your first account `eth.coinbase`, 
 just buy some at [bittrex.com](https://bittrex.com/Market/Index?MarketName=BTC-SOIL), 
@@ -178,11 +180,9 @@ start gsoil with open RPC port, and immediately add peers.
 #### Python, pip, EthJsonRpc
 
 To access the commands in Python, I am using the package [ethjsonrpc](https://github.com/ConsenSys/ethjsonrpc), 
-installed via `pip` (pip is usually [included in python](https://pip.pypa.io/en/stable/installing/)). 
-Better update pip (current is v8.1.2). Open a terminal/cmd.exe, and type:
+installed via `pip` (pip is usually included in python, or can easily with `apt-get install python-pip`, or with
+[get-pip.py](https://pip.pypa.io/en/stable/installing/)). Check if pip is there:
 
-	pip --version
-    pip install --upgrade pip
     pip --version
 
 `pip` makes it easy to install any of 80k Python packages from [PyPI](https://pypi.python.org). 
@@ -206,7 +206,8 @@ and behind the python >>> prompt start coding:
     c.eth_blockNumber()
     for i in range(30): print c.eth_blockNumber(); time.sleep(2)
     
-after the last command you need to press enter once more, to start that loop. Congratulations, you are coding in Python.
+after the last command you need to press enter once more, to start that loop. It ends after 1 minute. 
+Congratulations, you are coding in Python.
 
 Try out more?  python >>>
 
