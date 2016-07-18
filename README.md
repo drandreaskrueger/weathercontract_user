@@ -4,7 +4,7 @@ Novel smart contract:
 * ForecastWeatherAtLocation
 * oracle to serve weather data into the chain
 * first launched on SOIL
-* incl. tools to interact with it
+* incl. tools to interact with it - PLEASE BECOME A TESTER
 
 **News:** The contract ABI and the tools.js are published, the oracle is working! You can use this contract now.
 
