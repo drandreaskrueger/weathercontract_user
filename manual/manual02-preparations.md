@@ -1,4 +1,4 @@
-version 0.5.5 (July 15th 2016) - contract ABI is not yet published - you can read texts, and prepare your system.
+version 0.5.8 (July 18th 2016) - contract ABI and tools are published!
 # Manual 2: Preparations
 
 ### 0 operating system
@@ -161,7 +161,7 @@ There is an excellent [security summary](http://ethereum.stackexchange.com/a/388
 
 #### Scripts make it easy
 
-There [gsoilrpc.BAT](../useful/gsoilrpc.BAT) (windows) and 
+The [gsoilrpc.BAT](../useful/gsoilrpc.BAT) (windows) and 
 [gsoilrpc.sh](../useful/gsoilrpc.sh) (Linux) (Mac?) scripts 
 start gsoil with open RPC port, and immediately add peers.
 

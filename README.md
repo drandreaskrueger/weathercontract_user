@@ -1,11 +1,11 @@
-version 0.5.4 (July 15th 2016) - contract ABI is not yet published, but you can read texts, and prepare your system.
+version 0.5.8 (July 18th 2016) - contract ABI and tools are published!
 # weathercontract_user
 Novel smart contract:
 * ForecastWeatherAtLocation
 * first launched on SOIL
 * incl. tools to interact with it
 
-The ABI is not yet published. Stay tuned.
+**News:** The contract ABI and the tools.js are published! You can use this now.
 
 ### What to do already:
 
@@ -15,6 +15,7 @@ The ABI is not yet published. Stay tuned.
 3 Buy SOIL, e.g. at [bittrex.com](https://bittrex.com/Market/Index?MarketName=BTC-SOIL), 
 download & sync your [SOIL wallet](https://bitcointalk.org/index.php?topic=1176709.msg12385424#msg12385424).  
 4 Send me some, and support this project.
+5 Try out the [quickstart](manual/manual03-console-quickstart.md).
 
 ### Become an Angel now:
 Thanks a lot already to: `croxx`, and `yns1971`!
