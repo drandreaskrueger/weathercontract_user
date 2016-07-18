@@ -1,21 +1,22 @@
-version 0.5.8 (July 18th 2016) - contract ABI and tools are published!
+version 0.5.8 (July 18th 2016) - contract ABI and tools are published! Try the [quickstart](manual/manual03-console-quickstart.md).
 # weathercontract_user
 Novel smart contract:
 * ForecastWeatherAtLocation
+* oracle to serve weather data into the chain
 * first launched on SOIL
 * incl. tools to interact with it
 
-**News:** The contract ABI and the tools.js are published! You can use this now.
+**News:** The contract ABI and the tools.js are published, the oracle is working! You can use this contract now.
 
 ### What to do:
 
 1 Make sure you **read [Text01 - Introduction](text/text01-introduction.md)** 
 (same **as [PDF](https://github.com/drandreaskrueger/weathercontract_user/raw/master/text/text01-introduction.pdf)**).  
-2 Prepare your system, see [Manual02 - Preparations](manual/manual02-preparations.md)  
+2 Prepare your system, see [Manual02 - Preparations](manual/manual02-preparations.md).   
 3 Buy SOIL, e.g. at [bittrex.com](https://bittrex.com/Market/Index?MarketName=BTC-SOIL), 
 download & sync your [SOIL wallet](https://bitcointalk.org/index.php?topic=1176709.msg12385424#msg12385424).  
 4 Send me some, and support this project.  
-5 Try out the [quickstart](manual/manual03-console-quickstart.md).
+5 Try out the [quickstart](manual/manual03-console-quickstart.md) in the Javascript console (**NEW**)
 
 ### Become an Angel now:
 Thanks a lot already to: `croxx`, and `yns1971`!
