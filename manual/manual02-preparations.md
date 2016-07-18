@@ -38,8 +38,14 @@ and transfer them to your soil wallet. Create a soil address in your wallet with
 Your private keys are each protected with a passphrase; the private key files are 
 in `~/.soil/keystore/` (Linux), or `%APPDATA%\soil\keystore\` (Windows) - make a backup!
 
+Start gsoil:
+
+    gsoil
+    
 
 ### 2 clone or download this repo
+
+Clone this whole repo (then later, updates are easy)
 
     git clone https://github.com/drandreaskrueger/weathercontract_user
     cd weathercontract_user
@@ -47,8 +53,8 @@ in `~/.soil/keystore/` (Linux), or `%APPDATA%\soil\keystore\` (Windows) - make a
 OR (first commands means download & save):
 
 	wget https://github.com/drandreaskrueger/weathercontract_user/archive/master.zip
-	mv weathercontract_user-master.zip weathercontract_user.zip
-	unzip weathercontract_user.zip
+	unzip master.zip
+	mv weathercontract_user_master weathercontract_user
 	cd weathercontract_user
 		
 (`mv` means `rename` = on Windows you probably do that with the explorer).
@@ -56,6 +62,7 @@ OR (first commands means download & save):
 The result is a new folder `/your/path/to/weathercontract_user/` somewhere on your disk.
 
 ### 3 the correct folder
+
 You need to be INSIDE that new folder, for working with my scripts, e.g. for the *gsoil console*. 
 Open a terminal / cmd.exe inside that folder; or open a terminal / cmd.exe and then do `cd /your/path/to/weathercontract_user`. 
 Example for windows: 
@@ -72,7 +79,7 @@ Example for windows:
 You need to execute `admin.addPeer()` commands, to inform your node of other nodes. There is an `addpeers.js` script here:
 [useful/addpeers.js](https://github.com/drandreaskrueger/weathercontract_user/blob/master/useful/addpeers.js). 
 
-So: In a first terminal/cmd.exe, start gsoil
+So: In a first terminal/cmd.exe, start gsoil (You have done that in 1 above)
 
     gsoil 
 
@@ -138,9 +145,11 @@ enjoy your summer. Or:
 
 ### 7 Python talks to RPC port
 
-My Python library helps to build apps that interact with smart contracts. Most Linux distributions come with Python 2.7 anyways (check `python --version`), if not:
+My Python library helps to build apps that interact with smart contracts. 
+Most Linux distributions come with Python 2.7 anyways (check `python --version`), 
+but you also need the `python-dev` and the `libssl-dev` packages
 
-    apt-get install python
+    apt-get -y install python python-dev libssl-dev
 
 Windows, as usual, is a bit more complicated. Download [Python 2.7](https://www.python.org/downloads/) (not 3.5), 
 or [Anaconda](https://www.continuum.io/downloads) with Python 2.7. Edit your .py files simply 
@@ -152,6 +161,7 @@ and a funny [tutorial](https://docs.python.org/2/tutorial/) if you want to go de
 
 To **access gsoil from Python EthJsonRpc you must start gsoil with open RPC port**, using the switch `--rpc`
 
+	cd weathercontract_user
     gsoil --rpc  --rpcaddr="localhost" js useful/addpeers.js
     
 Additional to that "localhost", I have configured my *firewall* so that *only localhost can access port 39421*. 
@@ -178,8 +188,8 @@ Better update pip (current is v8.1.2). Open a terminal/cmd.exe, and type:
 `pip` makes it easy to install any of 80k Python packages from [PyPI](https://pypi.python.org). 
 Pip gets all dependencies, and then install ethjsonrpc: 
 
-	pip install ethjsonrpc      # or
-	sudo pip install ethjsonrpc
+	pip install --upgrade web3 ethjsonrpc     # or
+	sudo pip install --upgrade web3 ethjsonrpc
   
 It should end with something like `Successfully installed ... Cleaning up...`. Now try it out: 
 
@@ -194,7 +204,7 @@ and behind the python >>> prompt start coding:
     pprint.pprint (dir(c))
     
     c.eth_blockNumber()
-    for i in range(30): print c.eth_blockNumber(); time.sleep(1)
+    for i in range(30): print c.eth_blockNumber(); time.sleep(2)
     
 after the last command you need to press enter once more, to start that loop. Congratulations, you are coding in Python.
 
@@ -207,7 +217,7 @@ Infos about the last block:
 	
 	block['difficulty']
 	dir(web3.utils.encoding)
-	web3.utils.encoding.toDecimal(block['difficulty'])
+	web3.utils.encoding.to_decimal(block['difficulty'])
 
 Your account balances:
 
@@ -216,12 +226,12 @@ Your account balances:
 	print acc0
 
 	c.eth_getBalance(acc0)
-    fromWei = web3.utils.currency.fromWei
-	fromWei(c.eth_getBalance(acc0), "ether")
+    from_wei = web3.utils.currency.from_wei
+	from_wei(c.eth_getBalance(acc0), "ether")
 
 	balanceTotal = sum( [c.eth_getBalance(account) for account in c.eth_accounts()] )
 	print balanceTotal 
-	fromWei( balanceTotal, "ether")
+	from_wei( balanceTotal, "ether")
 
 	
 I am looking forward to seeing all the useful tools you are going to build now. 
@@ -232,5 +242,5 @@ I am looking forward to seeing all the useful tools you are going to build now.
 * [text01-introduction.md](../text/text01-introduction.md) also [as PDF](../text/text01-introduction.pdf)
 * manual01-overview.md (soon)
 * [manual02-preparations.md](manual02-preparations.md) (this file)
-* manual03-console-quickstart.js (soon)
+* [manual03-console-quickstart.md](manual03-console-quickstart.md) (**new**)
 * manual04-console-understand-contract-interface.js (soon)
