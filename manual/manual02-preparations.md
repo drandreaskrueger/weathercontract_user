@@ -56,10 +56,11 @@ OR (first commands means download & save):
 
 	wget https://github.com/drandreaskrueger/weathercontract_user/archive/master.zip
 	unzip master.zip
+	rm master.zip
 	mv weathercontract_user_master weathercontract_user
 	cd weathercontract_user
 		
-(`mv` means `rename` = on Windows you probably do that with the explorer).
+(`rm` means `remove`, and `mv` means `rename` = on Windows you probably do that with the explorer).
 	
 The result is a new folder `/your/path/to/weathercontract_user/` somewhere on your disk.
 
