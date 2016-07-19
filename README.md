@@ -23,9 +23,9 @@ Thanks a lot already to: `croxx`, and `yns1971`!
 
 Please send to 
 
-* [SOIL] 0x1077ac9ebf8e5c492b7174c3a3d264801044834e
-* [ETH]  0x86c362fde6df8c5bcdb7091d97bd70bf06262bf8
-* [BTC]  1J8X4PWeGEkKDsG3TbSZfzeAPdYmQMc5ut
+* [SOIL] [0x1077ac9ebf8e5c492b7174c3a3d264801044834e](http://178.62.133.174:9001/#/address/0x1077ac9ebf8e5c492b7174c3a3d264801044834e)
+* [ETH]  [0x86c362fde6df8c5bcdb7091d97bd70bf06262bf8](https://etherchain.org/account/0x86c362fde6df8c5bcdb7091d97bd70bf06262bf8)
+* [BTC]  [1J8X4PWeGEkKDsG3TbSZfzeAPdYmQMc5ut](https://blockchain.info/address/1J8X4PWeGEkKDsG3TbSZfzeAPdYmQMc5ut)
 
 Thank you.
 
