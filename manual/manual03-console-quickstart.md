@@ -10,6 +10,38 @@ For this quickstart tutorial Python is not needed yet. All happens in your gsoil
 
 # Manual 3: Console - Quickstart
 
+## All in one
+Further below are verbose explanations. This is the **hyperquickstart** = most commands in one block, so that you see the general idea. 
+
+    gsoil
+    gsoil attach
+
+    loadScript('useful/addpeers.js')
+    loadScript("contract/contract.js")
+    loadScript("contract/tools.js")
+    W=WEATHERuser
+    ascii( W.user_getContractVersion() )
+
+    
+    city =     "q=Nanjing,China"
+    getForecast_message(city)
+
+    PRICE
+    tx = topUpLocation(city, 3); txReceipt = waitForTxReceipt(tx)
+    
+    admin.sleepBlocks(1); getForecast_message(city)
+  
+    getForecast(city)
+    getForecast(city, timestamp_now_plus_hours(24))
+    getForecast(city, timestamp_now_plus_hours(48))
+    getForecast(city, timestamp_now_plus_hours(24 * 3.5))
+    getForecast_message(city, timestamp_now_plus_hours(24 * 4.5))
+
+Learn by trying it ^ out - or learn by reading my explanations now: 
+
+
+## Step by Step
+
 Get the newest clone of this repo by
 
 	cd weathercontract_user
