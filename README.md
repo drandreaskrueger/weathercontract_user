@@ -1,4 +1,4 @@
-version 0.5.8 (July 18th 2016) - contract ABI and tools are published! Try the [quickstart](manual/manual03-console-quickstart.md).
+version 0.5.9 (July 26th 2016) - new contract v0.5.9 deployed! Try the [quickstart](manual/manual03-console-quickstart.md).  
 # weathercontract_user
 Novel smart contract:
 * ForecastWeatherAtLocation
