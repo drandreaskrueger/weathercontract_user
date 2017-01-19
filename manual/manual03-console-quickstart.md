@@ -13,6 +13,9 @@ For this quickstart tutorial Python is not needed yet. All happens in your gsoil
 ## All in one
 Further below are verbose explanations. This is the **hyperquickstart** = most commands in one block, so that you see the general idea. 
 
+    git clone https://github.com/drandreaskrueger/weathercontract_user.git
+    cd weathercontract_user
+
     gsoil
     gsoil attach
 
